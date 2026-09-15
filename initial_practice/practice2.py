@@ -58,11 +58,20 @@ tonic_packs_needed = math.ceil(tonic_cans_needed / cans_per_pack)
 # The * operator multiplies the number of packs by the price of one pack.
 mixer_cost = tonic_packs_needed * tonic_pack_cost
 
-# The total_cost variable adds the mixer cost to the drink cost.
-# The + operator combines both expenses into one total.
-total_cost = drink_cost + mixer_cost
+# The chips_cost variable stores the price of the chips for the party.
+# The dip_cost variable stores the price of the dip for the party.
+chips_cost = 15
+dip_cost = 10
+
+# The snack_cost variable adds the chips and dip together.
+# The + operator combines both snack costs into one total.
+snack_cost = chips_cost + dip_cost
+
+# The total_cost variable adds the mixer cost, drink cost, and snack cost together.
+# The + operator combines all three expenses into one final total.
+total_cost = drink_cost + mixer_cost + snack_cost
 
 # The final print() statement displays the answer for the user.
 # Commas separate multiple values in print(), and Python adds spaces between them.
-print("The total cost for the party drinks and mixers is $", total_cost)
+print("The total cost for the party drinks, mixers, and snacks is $", total_cost)
 
